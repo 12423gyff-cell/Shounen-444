@@ -1,0 +1,6 @@
+{
+  "name": "SHIFT REPORT: PROTOCOL 98 — Director's Cut",
+  "description": "Top-down atmospheric survival horror action game set inside St. Jude Memorial Hospital with story campaign, endless survival, procedural lighting, stealth/forensic tools, crafting, and tactical puzzles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

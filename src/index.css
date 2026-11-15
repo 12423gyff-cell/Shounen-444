@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --amber: #e0ae56;
+  --teal: #5cbab5;
+  --crimson: #ff4b4e;
+  --bone: #e3eae5;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #020506;
+  color: var(--bone);
+  font-family: "JetBrains Mono", Consolas, "Courier New", monospace;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  touch-action: none;
+}
+
+body.nocursor canvas#gameCanvas {
+  cursor: none;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.hud-text-shadow {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.92), 0 0 10px rgba(0, 0, 0, 0.65);
+}
+
+.panel-surface {
+  background: linear-gradient(155deg, rgba(13, 22, 26, 0.96), rgba(4, 8, 10, 0.97));
+  border: 1px solid rgba(148, 186, 182, 0.24);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.78), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+@keyframes dangerPulse {
+  0%, 100% { opacity: 0.28; }
+  50% { opacity: 0.68; }
+}
+
+.danger-pulse {
+  animation: dangerPulse 0.85s ease-in-out infinite;
+}
+
+@media (pointer: coarse) and (orientation: portrait) {
+  .portrait-rotate-gate {
+    display: flex !important;
+  }
+}
